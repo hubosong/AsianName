@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layoutmainbg"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000"/>
+
+    <LinearLayout
+        android:layout_width="325dp"
+        android:layout_height="320dp"
+        android:background="@drawable/logoname"
+        app:layout_constraintBottom_toTopOf="@+id/access"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.329"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="325dp"
+            android:layout_height="320dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.329"
+            app:srcCompat="@drawable/logomingzi" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/access"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Acessar"
+        android:textColor="#fff"
+        android:background="@drawable/buttons_home"
+        android:drawableLeft="@drawable/ic_translate_black_24dp"
+        app:layout_constraintBottom_toTopOf="@+id/contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/contact"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Contato"
+        android:textColor="#fff"
+        android:background="@drawable/buttons_home"
+        android:drawableLeft="@drawable/ic_message_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/buttons_volume"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="yinyue"/>
+
+</android.support.constraint.ConstraintLayout>

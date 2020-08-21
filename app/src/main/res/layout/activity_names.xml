@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layoutmainbg"
+    tools:context=".NamesActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77000000"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#77000000"
+                android:drawableLeft="@drawable/ic_border_color_black_24dp"
+                android:padding="15dp"
+                android:focusable="false"/>
+
+            <EditText
+                android:id="@+id/edt_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite o seu primeiro nome.."
+                android:background="#77000000"
+                android:padding="15dp"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttons_flags"
+                android:scaleType="centerInside"
+                android:layout_marginEnd="5dp"
+                android:onClick="chinese"
+                android:adjustViewBounds="true"
+                android:src="@drawable/flag_china"/>
+
+            <ImageButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttons_flags"
+                android:scaleType="centerInside"
+                android:layout_marginEnd="5dp"
+                android:onClick="japanese"
+                android:adjustViewBounds="true"
+                android:src="@drawable/flag_japan"/>
+
+            <ImageButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttons_flags"
+                android:scaleType="centerInside"
+                android:layout_marginEnd="5dp"
+                android:onClick="korean"
+                android:adjustViewBounds="true"
+                android:src="@drawable/flag_korea"/>
+
+            <ImageButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttons_flags"
+                android:scaleType="centerInside"
+                android:onClick="oldChinese"
+                android:adjustViewBounds="true"
+                android:src="@drawable/flag_oldchina"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttons_flags"
+                android:scaleType="centerInside"
+                android:layout_marginEnd="5dp"
+                android:onClick="mongolia"
+                android:adjustViewBounds="true"
+                android:src="@drawable/flag_mongolia"/>
+
+            <ImageButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttons_flags"
+                android:scaleType="centerInside"
+                android:layout_marginEnd="5dp"
+                android:onClick="tailand"
+                android:adjustViewBounds="true"
+                android:src="@drawable/flag_tailand"/>
+
+            <ImageButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttons_flags"
+                android:scaleType="centerInside"
+                android:layout_marginEnd="5dp"
+                android:onClick="vietam"
+                android:adjustViewBounds="true"
+                android:src="@drawable/flag_vietnam"/>
+
+            <ImageButton
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttons_flags"
+                android:scaleType="centerInside"
+                android:onClick="tibet"
+                android:adjustViewBounds="true"
+                android:src="@drawable/flag_tibet"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:background="#77000000">
+
+            <Button
+                android:id="@+id/volume"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/buttons_volume"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:onClick="voiceButton"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HAN ZI"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                <TextView
+                    android:id="@+id/txt_pinyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PIN YIN"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/txt_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/transparent"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

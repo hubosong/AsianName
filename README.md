@@ -1,6 +1,6 @@
 # AsianName
 
-Desenvolvido por Robson Machczew.
+Desenvolvido por Robson Machczew usando Android.
 
 O projeto de estudo possui..<br/>
   animação na tela splash e principal, <br/>
